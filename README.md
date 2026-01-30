@@ -78,8 +78,8 @@ Using `msgfmt`, we'll need to compile our message catalog into a new locale dire
 This can be done with:
 
 ```
-mkdir -p locales/fr/LC_MESSAGES/
-msgfmt "index.po" -o "locales/fr/LC_MESSAGES/index.mo"
+mkdir -p src/locales/fr/LC_MESSAGES/
+msgfmt "index.po" -o "src/locales/fr/LC_MESSAGES/index.mo"
 ```
 
 The only thing left to do is let Sphinx know where our `locale` directory is and
