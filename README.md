@@ -4,8 +4,14 @@ Sphinx internationalization
 This repository contains a basic Sphinx project and instructions for facilitating
 your first translation.
 
-Before getting started, we'll need to set up a Python virtual environment with the
-necessary dependencies:
+Start by cloning this repository:
+
+```
+git clone git@github.com:jahn-junior/sphinx-i18n-test
+cd sphinx-i18n-test
+```
+
+Next, we'll also need to set up a Python virtual environment with the necessary dependencies:
 
 ```
 python3 -m venv .venv
