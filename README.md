@@ -37,7 +37,7 @@ sphinx-build -M gettext src/ build/
 Each file's messages are extracted into `build/gettext/` as `.pot` files. These `.pot`
 files, known as _catalog templates_, only contain the messages in the original language.
 Each catalog templates will need to be translated and converted to ``.po`` files, or
-_message templates_. Let's do a simple translation. Copy ``build/gettext/index.pot``
+_message catalogs_. Let's do a simple translation. Copy ``build/gettext/index.pot``
 to the root of the project.
 
 ```
@@ -104,4 +104,14 @@ You can also change the language by setting `language` in your `conf.py` file.
 
 If you open `build/fr/index.html` in your browser, you should notice that our
 text is now in French!
+
+## Next steps
+
+If you want to learn more about internationalization in Sphinx, check out the
+following material:
+
+* [GNU gettext](https://www.gnu.org/software/gettext/manual/gettext.html)
+* [Internationalization | Sphinx](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html)
+* [sphinx-intl](https://sphinx-intl.readthedocs.io/en/master/)
+* [Transifex client documentation](https://developers.transifex.com/docs/using-the-client)
 
