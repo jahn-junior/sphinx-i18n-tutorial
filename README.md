@@ -24,9 +24,9 @@ sudo apt install gettext
 
 Let's extract all of the translatable strings, or _messages_, in our project with:
 
-``
-    sphinx-build -M gettext src/ build/
-``
+```
+sphinx-build -M gettext src/ build/
+```
 
 Each file's messages are extracted into `build/gettext/` as `.pot` files. These `.pot`
 files, known as _catalog templates_, only contain the messages in the original language.
