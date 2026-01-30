@@ -2,7 +2,7 @@ Sphinx internationalization
 ===========================
 
 This repository contains a basic Sphinx project and instructions for facilitating
-doctree translations.
+your first translation.
 
 Before getting started, we'll need to set up a Python virtual environment with the
 necessary dependencies:
