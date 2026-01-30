@@ -11,7 +11,7 @@ git clone git@github.com:jahn-junior/sphinx-i18n-test
 cd sphinx-i18n-test
 ```
 
-Next, we'll also need to set up a Python virtual environment with the necessary dependencies:
+we'll also need to set up a Python virtual environment with the necessary dependencies:
 
 ```
 python3 -m venv .venv
@@ -89,13 +89,8 @@ msgfmt "index.po" -o "src/locales/fr/LC_MESSAGES/index.mo"
 ```
 
 The only thing left to do is let Sphinx know where our `locale` directory is and
-which language we want to build in. In our case, this is already done. Note the
-following values in the `src/conf.py` file:
-
-```
-locale_dirs = ["locales/"]
-language = "fr"
-```
+which language we want to build in. In our case, this is already done, but you
+may want to have a look at the `conf.py` file for future reference.
 
 Finally, let's build our test project in both languages: once in English and once
 in French.
@@ -108,5 +103,5 @@ sphinx-build -b html -D language='fr' src/ build/fr/
 You can also change the language by setting `language` in your `conf.py` file.
 
 If you open `build/fr/index.html` in your browser, you should notice that our
-text is now in French! 
+text is now in French!
 
