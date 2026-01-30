@@ -74,10 +74,11 @@ Let's translate each message to French. Make the following changes to the file:
 We've now mapped each of the messages to its equivalent string in French. Now let's
 apply our translation!
 
-Using `msgfmt`, we'll need to compile our message catalog into a locale directory.
+Using `msgfmt`, we'll need to compile our message catalog into a new locale directory.
 This can be done with:
 
 ```
+mkdir -p locales/fr/LC_MESSAGES/
 msgfmt "index.po" -o "locales/fr/LC_MESSAGES/index.mo"
 ```
 
